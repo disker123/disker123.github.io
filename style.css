@@ -1,0 +1,21 @@
+.banner{/*this is the top of the webpage where the card is shown*/
+    background-color: black;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 300%; 
+    color: white;
+    margin-top: 0%;
+
+}
+
+body{
+    background-color:silver;/*website color*/
+    margin: 0 0;
+}
+
+table, th, td {/*This gives the table a stroke outline so it looks more like a data chart*/
+    border:1px solid black;
+    font-size: 125%;
+  }
+
