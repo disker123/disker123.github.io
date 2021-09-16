@@ -2,11 +2,13 @@
     background-color: black;
     border: 0px;
     padding: 0px;
-    margin: 0px;
     font-size: 300%; 
     color: white;
-    margin-top: 0%;
+    text-align: center;
+}
 
+#flavortext{
+    text-align: center;
 }
 
 body{
