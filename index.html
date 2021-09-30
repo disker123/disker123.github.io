@@ -1,106 +1,56 @@
-<!--
-File: index.html 
-GUI Assignment:  Creating Your First Web Page 
-Greg Kaplowitz, gregory_kaplowitz@student.uml.edu
-Copyright (c) 2021 by Kaplowitz
-The purpose of this site is to work with a custom made magic card that instructs you to come to this site
-On page load the website randomly picks one of ten magic cards and displays it on the screen
-There is a table that shows all the cards that can be chosen as well as its corosponding color pattern
--->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head >
+<head>
+    <title>Pacific Trails Resort</title>
     <meta charset="utf-8">
-    <title>Ultimate Ultimatum</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
+    <link href="pacific.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>   <![endif]-->
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Pacific Trails Resort</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="yurts.html">Yurts</a>
+                </li>
+                <li><a href="activities.html">Activities</a>
+                </li>
+                <li><a href="reservations.html">Reservations</a>
+            </ul>
+        </nav>
+        <div id="content">
+            <h2>Enjoy Nature in Luxury</h2>
+            <img src="images/coast.jpg" alt="Pacific Coast">
+            <p><span class="resort">Pacific Trails Resort</span> offers a special lodging experience on the California North Coast. Relax in serenity with panoramic views of the Pacific Ocean.</p>
+            <ul>
+                <li>Private yurts with decks overlooking the ocean</li>
+                <li>Activities lodge with fireplace and gift shop</li>
+                <li>Nightly fine dining at the Overlook Cafe</li>
+                <li>Heated outdoor pool and whirlpool</li>
+                <li>Guided hiking tours of the redwoods</li>
+            </ul>
+            <div id="contact">
+                <span class="resort">Pacific Trails Resort</span>
+                <br> 12010 Pacific Trails Road
+                <br> Zephyr, CA 95555
+                <br>
+                <br> 888-555-5555
+                <br>
+                <br>
+            </div>
+        </div>
+        <footer>
+            Copyright &copy; 2014 Pacific Trails Resort
+            <br>
+            <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+        </footer>
+    </div>
+</body>
 
-
-<!-- page content -->
-  <body> 
-    <div class=banner>  <!--This is where the card will be shown when a user loads the webpage-->
-    
-      <h1 > Ultimate Ultimatum</h1>
-      <a href="https://scryfall.com/search?q=ultimatum"><img src="images/mtg_logo.jpg" width="336" height="468" id="card" alt="ultimatum"></a>  <!--the logo image is a placeholder image to keep the website from rescaling on loadtime--> 
-      <!--the image also links to a card database so you can view more information on the cards-->
-
-    
-  </div>
-    <div id=flavortext>
-      <h1>You have been given your ultimatum <br><br> BE GONE NOW!!!</h1>
-    </div>>
-    <br> <br> <br> <br>
-    <div class=chart> <!--a table with all the possible Ultimatums and their corosponding color patterns-->
-    <table>
-      <tr>
-        <th>Card Name</th>
-        <th>Color</th>
-      </tr>
-
-      <tr>
-        <td>Brilliant Ultimatum</td>
-        <td>W, BLU, BLA</td>        
-      </tr>
-
-      <tr>
-        <td>Clarion Ultimatum</td>
-        <td>G, W, BLU</td>      
-      </tr>
-
-      <tr>
-        <td>Cruel Ultimatum</td>
-        <td>G, W, BLU</td>      
-      </tr>
-
-      <tr>
-        <td>Emergent Ultimatum</td>
-        <td>BLA, G, BLU</td>      
-      </tr>
-      <tr>
-        <td>Eerie Ultimatum</td>
-        <td>W, BLA, G</td>      
-      </tr>
-
-      <tr>
-        <td>Genesis Ultimatum</td>
-        <td>G, BLU, R</td>      
-      </tr>
-
-      <tr>
-        <td>Inspired Ultimatum</td>
-        <td>BLU, R, W</td>      
-      </tr>
-
-      <tr>
-        <td>Ruinous Ultimatum</td>
-        <td>R, W, BLA</td>      
-      </tr>
-
-      <tr>
-        <td>Titanic Ultimatum</td>
-        <td>R, G, W</td>      
-      </tr>
-
-      <tr>
-        <td>Violent Ultimatum</td>
-        <td>BLA, R, G</td>      
-      </tr>
-
-    </table>
-  </div>
-    <br> <br> <br> <br>
-    
-<!--When users playing/watching the custom cube they might want to make cards of their own so this will link them to where they can do that-->
-  <div>
-    <p>This site is used for a custom card that is made with MTG cardsmith if you want to make your owne
-      cards try it out yourself at <a href="https://mtgcardsmith.com/" target="_blank">their website</a>
-    </p>
-  </div> 
-
-  <footer><br>All cards used are owned by Wizards of the Coast</footer>
-  </body>
-  <!--this is where I am giving atribution to the owner of the art/game pieces I used -->
-  
 </html>
