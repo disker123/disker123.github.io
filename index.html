@@ -1,56 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- 
+    Greg Kaplowitz
+    gregory_kaplowitz@student.uml.edu
+    Using bootstrap 5 to create a form that takes in bounds for a multiplication table 
+ -->
+<html>
 <head>
-    <title>Pacific Trails Resort</title>
-    <meta charset="utf-8">
-    <link href="pacific.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--[if lt IE 9]>
-   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>   <![endif]-->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--<link rel='stylesheet' type='text/css' media='screen' href='main.css'>-->
+    <script src='js\main.js'></script>
+     <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script> 
 </head>
 <body>
-    <div id="wrapper">
-        <header>
-            <h1>Pacific Trails Resort</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a>
-                </li>
-                <li><a href="yurts.html">Yurts</a>
-                </li>
-                <li><a href="activities.html">Activities</a>
-                </li>
-                <li><a href="reservations.html">Reservations</a>
-            </ul>
-        </nav>
-        <div id="content">
-            <h2>Enjoy Nature in Luxury</h2>
-            <img src="images/coast.jpg" alt="Pacific Coast">
-            <p><span class="resort">Pacific Trails Resort</span> offers a special lodging experience on the California North Coast. Relax in serenity with panoramic views of the Pacific Ocean.</p>
-            <ul>
-                <li>Private yurts with decks overlooking the ocean</li>
-                <li>Activities lodge with fireplace and gift shop</li>
-                <li>Nightly fine dining at the Overlook Cafe</li>
-                <li>Heated outdoor pool and whirlpool</li>
-                <li>Guided hiking tours of the redwoods</li>
-            </ul>
-            <div id="contact">
-                <span class="resort">Pacific Trails Resort</span>
-                <br> 12010 Pacific Trails Road
-                <br> Zephyr, CA 95555
-                <br>
-                <br> 888-555-5555
-                <br>
-                <br>
-            </div>
-        </div>
-        <footer>
-            Copyright &copy; 2014 Pacific Trails Resort
-            <br>
-            <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
-        </footer>
-    </div>
-</body>
+    <div class="container mt-3">
+        <h2>Multiplication Table Generator</h2>
+        <!--data form in a table so it looks and is centered-->
+        <table class="table">
+            <form >
+                <div class="mb-3 mt-3">
+                  <label for="Numbers" class="form-label">xstart:</label>
+                  <input type="number" class="form-control" id="xstart" placeholder="Enter number" name="xstart">
+                </div>
+                <div class="mb-3">
+                    <label for="Numbers" class="form-label">xend:</label>
+                    <input type="number" class="form-control" id="xend" placeholder="Enter number" name="xend">
+                </div>
+                <div class="mb-3">
+                    <label for="Numbers" class="form-label">ystart:</label>
+                    <input type="number" class="form-control" id="ystart" placeholder="Enter number" name="ystart">
+                </div>
+                <div class="mb-3">
+                    <label for="Numbers" class="form-label">yend:</label>
+                    <input type="number" class="form-control" id="yend" placeholder="Enter number" name="yend">
+                </div>
+                <!--<button  class="btn btn-primary" onclick="submit()">Submit</button>-->
+              </form> 
+              <button  id="submit" class="btn btn-primary" onclick="submit()">Submit</button>
+        </table>
+      </div>
+      
 
+
+
+</body>
 </html>
+
+
