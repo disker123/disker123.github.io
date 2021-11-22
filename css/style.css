@@ -1,0 +1,22 @@
+.table-wrapper
+{
+    width: 50px;
+    height: 400px;
+    overflow: auto;
+}
+
+
+/*
+table
+{
+    border: 1px solid black;
+    margin-right: 20px;
+}
+
+td
+{
+    width: 40px;
+    height: 0px;
+    background-color: #ccc;
+}
+/*

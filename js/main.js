@@ -17,7 +17,7 @@ function submit(){
     var yendSTR = document.getElementById("yend").value;
     yend = parseInt(yendSTR)
     console.log(yend)
-
+    
 
     //checks that all entered fields are numbers
     if(isNaN(xstart)){
@@ -54,37 +54,62 @@ function submit(){
         console.log("TOO BIG")
         alert("Table to large please enter smaller bounds")
     }
-    //builds teh table
+    //builds the table
     else{
+        var table = document.getElementById('tbl');
+        table.clear
+        table.style.display = 'block';
+        
         xstart -= 1;
         ystart -= 1;
         var result = 'x';
-        document.write("<center><table border='1px'>");
-        for (var i = xstart; i <= xend; i++) {
-        document.write("<tr style='height:40px'>");
-        for (var j = ystart; j <= yend; j++) {
-            //case for top left corner blank space
-            if(i==xstart && j==ystart){
-                document.write("<td style='width:40px'><center><font size='4'>" + 'x' + "</center></font></td>");
-            }
-            //case for writing the Y axis
-            else if(i == xstart && j > ystart){
-                //result += '[' + j + ']';
-                document.write("<td style='width:40px; background-color:black; color:white'><center><font size='4'>"  + j + "</center></font></td>");
-            }
-            //case for writing the x axis
-            else if(j == ystart && i>xstart){
-                document.write("<td style='width:40px; background-color:black; color:white' ><center><font size='4'>" +  i +  "</center></font></td>");
-            }
-            //case for all the data points in the talbe (x*y)
-            else if(i>xstart && j>ystart){
-                document.write("<td style='width:40px' ><center><font size='4'>" + i * j + "</center></font></td>");
-            }
+        countX = 0;
+        
 
+        for (var i = xstart; i <= xend; i++) {
+            var row = table.insertRow(countX);
+            countY = 0;
+            for (var j = ystart; j <= yend; j++) {
+                var data = row.insertCell(countY);
+                //case for top left corner blank space
+                console.log(i,j)
+                if(i==xstart && j==ystart){
+                    
+                    data.innerHTML = 'x';
+                    data.style.width = '40px';
+                    data.style.fontSize = '4';
+
+                }
+                //case for writing the Y axis
+                else if(i == xstart && j > ystart){
+
+                    data.innerHTML = j;
+                    data.style.width = '40px';
+                    data.style.backgroundColor = 'black';
+                    data.style.color = 'white';
+                    data.class = "headcol";
+                }
+                //case for writing the x axis
+                else if(j == ystart && i>xstart){
+
+                    data.innerHTML = i;
+                    data.style.width = '40px';               
+                    data.style.backgroundColor = 'black';
+                    data.style.color = 'white';
+                }
+                //case for all the data points in the talbe (x*y)
+                else if(i>xstart && j>ystart){
+
+                    data.innerHTML = i * j;
+                    data.style.width = '40px';
+                    data.style.fontSize = '4';
+                }
+                countY++;
+            }
+                countX++;
+                
         }
-        document.write("</tr>");
-        }
-        document.write("</table></center>");
+
     }
 
 }
