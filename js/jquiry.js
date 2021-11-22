@@ -1,3 +1,9 @@
+/*
+Greg Kaplowitz
+gregory_kaplowitz@student.uml.edu
+My tab delete function is based on Darshan Shah's in his article "Dynamic jQuery Tabs - Add, Update, Delete And Sorting"
+*/
+
 var tabs = 0
 $(function() {
     jQuery.validator.addMethod("boundsX", function (element) {
