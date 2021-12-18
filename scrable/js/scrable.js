@@ -40,7 +40,7 @@ function addTile(){
   }
   ScrabbleTiles[tile]['number-remaining'] = ScrabbleTiles[tile]['number-remaining'] - 1//decrement the stock
   //add the tile to the rack
-  var path ="../tiles/"+ScrabbleTiles[tile]["file"]
+  var path ="tiles/"+ScrabbleTiles[tile]["file"]
   var img = $('<img id="'+ tile +'">');
   img.attr('src', path);
   img.draggable()
