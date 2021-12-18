@@ -1,0 +1,74 @@
+<!--Gregory Kaplowitz
+HW5
+GUI 1
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrable</title>
+    <link rel="shortcut icon" href="#">
+    
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Latest compiled and bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script> 
+    
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!--header  text-->
+    <div class="title">
+        <h1>SCRABLE</h1>
+    </div>
+
+    <div id="content">
+        <div id="HUD" class="container">
+            <div class="row">
+                <div id="lastword" class="col-md-7">
+                    <span id="lastWordText">Last Word:</span>
+                </div>
+                <div id="score" class="col-md-1">
+                    <span id="scoreText">Score:</span> 
+                </div>
+            </div>
+
+        </div>
+        <!--div for the board where the user will place tiles-->
+        <div id="board" class='container'>
+            <div class=row>
+                <div class="ui-droppable col-md-3" id='col0'></div>
+                <div class="ui-droppable" id='col1'></div>
+                <div class="ui-droppable" id='col2'></div>
+                <div class="ui-droppable" id='col3'></div>
+                <div class="ui-droppable" id='col4'></div>
+                <div class="ui-droppable" id='col5'></div>
+                <div class="ui-droppable" id='col6'></div>
+            </div>
+        </div>
+        <br><br>
+        <div class="ui-dropable" id="rack">
+            
+        </div>
+        <button id="demo" oclick="press()"> Press</button>
+    </div>
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/additional-methods.js"></script>
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
+
+    <script src="js\scrable.js"></script>
+</body>
+</html>

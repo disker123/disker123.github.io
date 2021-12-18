@@ -1,0 +1,98 @@
+body {
+    margin: 10px;
+	line-height: 1.8em;
+    background-color: lightgray;
+}
+
+.title{
+    padding-bottom: 100px
+}
+
+.title h1 {
+    font-weight: bold;
+    margin: 5px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+.title{
+    font-weight: bold;
+		margin: 5px;
+		font-size: 1.5em;
+}
+
+#content {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#board {
+	margin: 0 auto;
+    border:black;
+    width: 640px;
+    height: 100px;
+    padding-bottom: 100px
+}
+
+#col0{
+    background-image:url("../images/blankSpace.jpg");
+    width: 85px;
+    height: 90px;
+    
+}
+
+#col1{
+    background-image:url("../images/doubleSpace.jpg");
+    width: 85px;
+    height: 90px;
+}
+
+#col2{
+    background-image:url("../images/blankSpace.jpg");
+    width: 85px;
+    height: 90px;
+}
+
+#col3{
+    background-image:url("../images/blankSpace.jpg");
+    width: 85px;
+    height: 90px;
+}
+
+#col4{
+    background-image:url("../images/blankSpace.jpg");
+    width: 85px;
+    height: 90px;
+}
+
+#col5{
+    background-image:url("../images/doubleSpace.jpg");
+    width: 85px;
+    height: 90px;
+}
+
+#col6{
+    background-image:url("../images/blankSpace.jpg");
+    width: 85px;
+    height: 90px;
+}
+
+#rack{
+    margin: 0 auto;
+    background-image:url("../images/scrabble-tile-holder-406774_640.png");
+    width: 640px;
+    height: 182px;
+    
+}
+
+#board, #rack {
+    padding: 20px;
+
+}
+
+#rack img{
+    width: 70px;
+    height: 70px;
+}

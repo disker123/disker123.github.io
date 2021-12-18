@@ -1,0 +1,6 @@
+In this assignment I was still working on getting the tiles to be on top of the squares they are being placed.
+The issue is that when they are added to the div it keeps the possition values from their origin and they get 
+pushed up and to the side. They are still in the div tiles so the functionality is fine it just looks weird from 
+a user perspective. 
+The putting of tiles into the slots on the board works, when you hit the submit button it will take in the letters 
+stopping at the first empty space and updait your score acordingly and displays the previously entered word on the scoreboard 
